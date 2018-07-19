@@ -1,0 +1,21 @@
+{
+  "name": "youtubedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "budo": "^11.3.2",
+    "getusermedia": "^2.0.1",
+    "npm": "^6.2.0",
+    "simple-peer": "^9.1.2"
+  },
+  "devDependencies": {
+    "budo": "^11.3.2"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
