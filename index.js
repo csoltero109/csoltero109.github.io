@@ -1,38 +1,21 @@
-var getUserMedia = require('getusermedia')
+var app = new Vue({
+  el: '#appSpeak',
+  data:{
+    message: "Hello World"
+  },
+  methods: {
+    myFunction: function(){
+    responsiveVoice.speak(app.message)
+    } 
+  }
+});
 
-getUserMedia({ video: true, audio: false }, function (err, stream) {
-  if (err) return console.error(err)
 
-  var Peer = require('simple-peer')
-  var peer = new Peer({
-    initiator: location.hash === '#init',
-    trickle: false,
-    stream: stream
-  })
+Vue.component('greeting', {
+  template: '<p>Hey there, I am a reusable component</p>'
+});
 
-  peer.on('signal', function (data) {
-    document.getElementById('yourId').value = JSON.stringify(data)
-  })
 
-  document.getElementById('connect').addEventListener('click', function () {
-    var otherId = JSON.parse(document.getElementById('otherId').value)
-    peer.signal(otherId)
-  })
-
-  document.getElementById('send').addEventListener('click', function () {
-    var yourMessage = document.getElementById('yourMessage').value
-    peer.send(yourMessage)
-  })
-
-  peer.on('data', function (data) {
-    document.getElementById('messages').textContent += data + '\n'
-  })
-
-  peer.on('stream', function (stream) {
-    var video = document.createElement('video')
-    document.body.appendChild(video)
-
-    video.src = window.URL.createObjectURL(stream)
-    video.play()
-  })
-})
+var app2 = new Vue({
+  el: '#vue-app-one'
+});
