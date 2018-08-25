@@ -10,13 +10,19 @@
     <script src="https://unpkg.com/vue"></script>
   </head>
   <div class="level-item">
-    <div class="is-italics">
+    <div class="is-size-3">
       Hey there, my name is Christian Soltero
     </div>
   </div>
+	
   <div class="level-item">
   <body>
   
+  <div class="level-item">
+  	<div id="paragraphs">
+	<display v-for="post in posts" v-bind:key="post.id" v-bind:corp="post.corp" v-bind:pos="post.pos" v-bind:loc="post.loc" v-bind:period="post.period" v-bind:details="post.details"></display>
+	</div>
+  </div>
   <script src="index.js"></script>
   </body>
   </div>
