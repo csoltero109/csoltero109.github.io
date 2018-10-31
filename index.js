@@ -31,21 +31,22 @@ var app2 = new Vue({
 
 Vue.component('display', {
   props: ['corp','pos','loc','period','details'],
-  template: `<div class="box">
-				<div class="box">
-					<div class="level-left">
+  template: `
+  <div class="container is-fullwidth">
+		<div class="columns">
+			<div class="column is-one-quarter">
 						{{ corp }}<br>
 						{{ pos }}<br>
 						{{ loc }}<br>
 						{{ period }}<br>
-					</div>
-				</div>
-				<div class="container">
-					<div class="level-right">
-						{{ details }}
-					</div>
-				</div>
-			</div>`
+					
+			</div>
+	
+			<div class="column is-three-quarters">	{{ details }}
+					
+			</div>
+		</div>
+	</div>`
 });
 
 
