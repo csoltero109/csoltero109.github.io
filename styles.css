@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 1024px) {
+  .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

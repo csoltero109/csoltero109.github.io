@@ -2,12 +2,46 @@
 <html>
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
     <script src="https://unpkg.com/vue"></script>
+ 
+<title>Christian Soltero</title>
+<section class="hero is-info is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Christian Soltero
+      </h1>
+      <h2 class="subtitle">
+        Just trying to get by...
+      </h2>
+    </div>
+  </div>
+    <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active">
+            <a>About me</a>
+          </li>
+          <li>
+            <a>Interests</a>
+          </li>
+          <li>
+            <a>Work Experience</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>  
+
   </head>
   <div class="level-item">
     <div class="is-size-3">
@@ -18,13 +52,13 @@
   <div class="level-item">
   <body>
   
+  <div class="section">
   <div class="level-item">
   	<div id="paragraphs">
 	<display v-for="post in posts" v-bind:key="post.id" v-bind:corp="post.corp" v-bind:pos="post.pos" v-bind:loc="post.loc" v-bind:period="post.period" v-bind:details="post.details"></display>
 	</div>
   </div>
-  
-  
+  </div>
   <script src="index.js"></script>
   </body>
   </div>
