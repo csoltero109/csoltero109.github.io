@@ -8,32 +8,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
- 
+ <style>
+    html {
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    .has-bg-img { 
+      background: url('beach-dawn-evening-61105.jpg')center center; 
+      background-size:cover; 
+    }
+    .card{
+      width:550px;
+      border-radius: 25px;
+      margin: auto;
+      vertical-align: middle;
+      background-color: #e6e6e6;
+      opacity: 0.75;
+    }
+ </style>
 <title>Christian Soltero</title>
-<section class="hero is-info is-fullheight">
+<section class="hero is-info is-fullheight has-bg-img">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Christian Soltero
-      </h1>
-      <h2 class="subtitle">
-        Just trying to get by...
-      </h2>
+    <div class="container has-text-centered">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Christian Soltero</h3>
+            <div class="has-text-weight-bold">Just a Computer Scientist from Cal State LA trying to get by...</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
     <div class="hero-foot">
     <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
         <ul>
-          <li class="is-active">
+          <li class="is-active" id="defaultTab" onclick="defaults()">
             <a>About me</a>
           </li>
-          <li>
+          <li id="interestsTab" onclick="interests()">
             <a>Interests</a>
           </li>
-          <li>
+          <li id="experienceTab" onclick="experience()">
             <a>Work Experience</a>
           </li>
         </ul>
@@ -43,22 +62,21 @@
 </section>  
 
   </head>
-  <div class="level-item">
+  <!-- <div class="level-item">
     <div class="is-size-3">
       Hey there, my name is Christian Soltero
     </div>
-  </div>
+  </div> -->
 	
   <div class="level-item">
   <body>
-  
-  <div class="section">
-  <div class="level-item">
-  	<div id="paragraphs">
-	<display v-for="post in posts" v-bind:key="post.id" v-bind:corp="post.corp" v-bind:pos="post.pos" v-bind:loc="post.loc" v-bind:period="post.period" v-bind:details="post.details"></display>
-	</div>
-  </div>
-  </div>
+  <!-- <div class="section">
+    <div class="level-item">
+      <div id="paragraphs">
+	      <display v-for="post in posts" v-bind:key="post.id" v-bind:corp="post.corp" v-bind:pos="post.pos" v-bind:loc="post.loc" v-bind:period="post.period" v-bind:details="post.details"></display>
+	    </div>
+    </div>
+  </div> -->
   <script src="index.js"></script>
   </body>
   </div>
