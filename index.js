@@ -52,15 +52,15 @@ Vue.component('display', {
   props: ['corp','pos','loc','period','details'],
   template: `
   <div class="columns is-half">
-  <div class="box">
-		<div class="box">
-			<div class="level-left">
-				{{ corp }}<br>
-				{{ pos }}<br>
-				{{ loc }}<br>
-				{{ period }}<br>
-			</div>
-		</div>
+    <div class="box">
+		  <div class="box">
+			 <div class="level-left">
+			   	{{ corp }}<br>
+				  {{ pos }}<br>
+				  {{ loc }}<br>
+				  {{ period }}<br>
+			 </div>
+		  </div>
 		<div class="container">
 			<div class="level-right">
 				{{ details }}
@@ -69,7 +69,6 @@ Vue.component('display', {
 	</div>
   <br>
   </div>
-
   `
 });
 
@@ -90,14 +89,53 @@ function defaults(){
   document.getElementById("experienceTab").className = "";
   document.getElementById("interestsTab").className = "";
   document.getElementById("defaultTab").className = "is-active";
+  aboutMe();
 }
 function interests(){
   document.getElementById("experienceTab").className = "";
   document.getElementById("defaultTab").className = "";
   document.getElementById("interestsTab").className = "is-active";
+  interests();
 }
 function experience(){
   document.getElementById("defaultTab").className = "";
   document.getElementById("interestsTab").className = "";
   document.getElementById("experienceTab").className = "is-active";
+  workExperience();
+}
+function aboutMe(){
+  document.getElementById("mainPage").innerHTML = `
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Christian Soltero</h3>
+            <div class="has-text-weight-bold">You can't be a pro if you only have one trick...</div>
+          </div>
+        </div>
+      </div>
+  `;
+}
+function interests(){
+  document.getElementById("mainPage").innerHTML = `
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Christian Soltero</h3>
+            <div class="has-text-weight-bold">Here's a list of my interests</div>
+          </div>
+        </div>
+      </div>
+  `;
+}
+function workExperience(){
+  document.getElementById("mainPage").innerHTML = `
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <h3>Christian Soltero</h3>
+            <div class="has-text-weight-bold">My work experience is...</div>
+          </div>
+        </div>
+      </div>
+  `;
 }
