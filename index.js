@@ -83,27 +83,28 @@ var app4 = new Vue({
       { id: 3, corp: paragraphSJ.company, pos: paragraphSJ.position, loc: paragraphSJ.location, period: paragraphSJ.workPeriod, details:paragraphSJ.text }
       
     ]
-  }})
+  }
+});
 
 function defaults(){
   document.getElementById("experienceTab").className = "";
   document.getElementById("interestsTab").className = "";
   document.getElementById("defaultTab").className = "is-active";
-  aboutMe();
+  aboutMeDiv();
 }
 function interests(){
   document.getElementById("experienceTab").className = "";
   document.getElementById("defaultTab").className = "";
   document.getElementById("interestsTab").className = "is-active";
-  interests();
+  interestDiv();
 }
 function experience(){
   document.getElementById("defaultTab").className = "";
   document.getElementById("interestsTab").className = "";
   document.getElementById("experienceTab").className = "is-active";
-  workExperience();
+  workExperienceDiv();
 }
-function aboutMe(){
+function aboutMeDiv(){
   document.getElementById("mainPage").innerHTML = `
       <div class="card">
         <div class="card-content">
@@ -115,7 +116,7 @@ function aboutMe(){
       </div>
   `;
 }
-function interests(){
+function interestDiv(){
   document.getElementById("mainPage").innerHTML = `
       <div class="card">
         <div class="card-content">
@@ -127,7 +128,7 @@ function interests(){
       </div>
   `;
 }
-function workExperience(){
+function workExperienceDiv(){
   document.getElementById("mainPage").innerHTML = `
       <div class="card">
         <div class="card-content">
