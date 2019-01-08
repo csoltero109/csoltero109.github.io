@@ -109,8 +109,11 @@ function aboutMeDiv(){
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <h3>Christian Soltero</h3>
-            <div class="has-text-weight-bold">You can't be a pro if you only have one trick...</div>
+            <h1>Welcome! My name is Christian Soltero</h1>
+            <div class="has-text-weight-bold">
+              You can check out my <a href="https://github.com/csoltero109" target="_blank">Github here</a>.<br>
+              You can download my <a href="Resume.pdf" target="_blank">resume here</a>.
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +125,9 @@ function interestDiv(){
         <div class="card-content">
           <div class="content">
             <h3>Christian Soltero</h3>
-            <div class="has-text-weight-bold">Here's a list of my interests</div>
+            <div class="has-text-weight-bold">
+
+            </div>
           </div>
         </div>
       </div>
@@ -130,13 +135,108 @@ function interestDiv(){
 }
 function workExperienceDiv(){
   document.getElementById("mainPage").innerHTML = `
+  <div class="card scroll">  
+  <br>  
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <h3>Christian Soltero</h3>
-            <div class="has-text-weight-bold">My work experience is...</div>
+            <div class="has-text-left">
+              <h4>Avery Dennison</h4>
+            </div>
+            <div class="has-text-left">
+              <h6>Jr. Cloud Developer</h6>
+            </div>
+            <div class="has-text-weight-bold is-size-7 has-text-left">
+              <ul>
+                <li>Develop Google Appscript based programs to transform current business processes implemented on MS Excel to the Google Platform. </li>
+                <li>Provide consulting services for business teams such as requirements gathering, business analysis, technical feasibility analysis, technical solution design for new application code to be developed.</li>
+                <li>Assist in the development of tools and utilities to help employees complete tasks in a simple and efficient manner.</li>
+                <li>Explore new technologies on the Google Cloud Platform, conduct experiments and carry out proof of concepts to educate key stakeholders and raise awareness on such technologies.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <br>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <div class="has-text-left">
+              <h4>NASA Swarmathon</h4>
+            </div>
+            <div class="has-text-left">
+              <h6>Robot Programmer</h6>
+            </div>
+            <div class="has-text-weight-bold is-size-7 has-text-left">
+              <ul>
+                <li>Utilizing ROS framework to improve the mapping procedures on the Swarmathon rovers provided by NASA</li>
+                <li>Building a simulated Grid-Map of a rover's surroundings with the published sonar and odometry data. The simulation was made possible by integrating the ROS package RVIZ.</li>
+                <li>The project was developed on Ubuntu 16.04 with the programming language being C++.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <div class="has-text-left">
+              <h4>Saint Joseph High School</h4>
+            </div>
+            <div class="has-text-left">
+              <h6>IT Assistant</h6>
+            </div>
+            <div class="has-text-weight-bold is-size-7 has-text-left">
+              <ul>
+                <li>Configuring, implementing, and integrating commercial off-the-shelf (COTS) software such as Dell SonicWALL and Air Watch. These help in managing over 400 devices for students and staff members on the school campus.</li>
+                <li>Participates in Tech department meetings concerning issues with worksite servers, projects, operating systems, and software</li>
+                <li>Researches, identifies, and refers complex technical problems related to platform management, network connectivity, and desktop support.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <div class="has-text-left">
+              <h4>Fast5Xpress</h4>
+            </div>
+            <div class="has-text-left">
+              <h6>Backup Assistant Manager, Tunnel Guide</h6>
+            </div>
+            <div class="has-text-weight-bold is-size-7 has-text-left">
+              <ul>
+                <li>As a Backup Assistant Manager I would clean, troubleshoot, and work with the hydraulic, pneumatic, and eletrical machines on the worksite. I would also troubleshoot the computers and networking equipment when necessary.</li>
+                <li>When I was in the Tunnel Guide position, my main duty is to wash a customer's car without damaging the vehicle.</li>
+                <li>These positions have caused me to the become a good and creative problem solver.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <div class="has-text-left">
+              <h4>Your Entertainment System</h4>
+            </div>
+            <div class="has-text-left">
+              <h6>Front End Java Developer</h6>
+            </div>
+            <div class="has-text-weight-bold is-size-7 has-text-left">
+              <ul>
+                <li>Designing an Entertainment Library module which was a centre for all the media a user may own</li>
+                <li>Multiple modules were included to play music, videos, display photos, and even play games in one central hub.</li>
+                <li>Utilized VLCJ and Apache Tika to parse through mp3 and mp4 data to playback and display media to the user. This was all contained within Java swing code.  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
   `;
 }

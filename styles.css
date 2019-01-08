@@ -8,3 +8,18 @@
     margin-right: 0;
   }
 }
+
+.scroll {
+  /* max-height: 100px; */
+  height: 75%;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.scroll::-webkit-scrollbar { 
+  display: none;
+}
+/* 
+.half-height {
+  
+} */
