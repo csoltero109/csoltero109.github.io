@@ -110,9 +110,34 @@ function aboutMeDiv(){
         <div class="card-content">
           <div class="content">
             <h1>Welcome! My name is Christian Soltero</h1>
+            <p><b>Whether it's building PC's, making circuits, or programming scripts in various languages, I have done it all as a young IT professional.</b></p> <br>
             <div class="has-text-weight-bold">
-              You can check out my <a href="https://github.com/csoltero109" target="_blank">Github here</a>.<br>
-              You can download my <a href="Resume.pdf" target="_blank">resume here</a>.
+              <div class="columns">
+                <div class="column">
+                  <p>
+                    <span class="icon">
+                      <a href="https://github.com/csoltero109" target="_blank"><i class="fab fa-github"></i></a>
+                    </span>
+                  </p>
+                  <p>Github</p>
+                </div>
+                <div class="column">
+                  <p>
+                    <span class="icon">
+                      <a href="https://www.linkedin.com/in/christian-soltero-34724a90/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </span>
+                  </p>
+                  <p>LinkedIn</p>
+                </div>
+                <div class="column">
+                  <p>
+                    <span class="icon">
+                      <a href="Resume.pdf" target="_blank"><i class="fas fa-file"></i></a>
+                    </span>
+                  </p>
+                  <p>Resume</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
