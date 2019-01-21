@@ -86,6 +86,7 @@ var app4 = new Vue({
   }
 });
 
+
 function defaults(){
   document.getElementById("experienceTab").className = "";
   document.getElementById("interestsTab").className = "";
@@ -112,8 +113,8 @@ function aboutMeDiv(){
             <h1>Welcome! My name is Christian Soltero</h1>
             <p><b>Whether it's building PC's, making circuits, or programming scripts in various languages, I have done it all as a young IT professional.</b></p> <br>
             <div class="has-text-weight-bold">
-              <div class="columns">
-                <div class="column">
+              <div class="columns is-mobile">
+                <div class="column is-mobile">
                   <p>
                     <span class="icon">
                       <a href="https://github.com/csoltero109" target="_blank"><i class="fab fa-github"></i></a>
@@ -121,7 +122,7 @@ function aboutMeDiv(){
                   </p>
                   <p>Github</p>
                 </div>
-                <div class="column">
+                <div class="column is-mobile">
                   <p>
                     <span class="icon">
                       <a href="https://www.linkedin.com/in/christian-soltero-34724a90/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -129,7 +130,7 @@ function aboutMeDiv(){
                   </p>
                   <p>LinkedIn</p>
                 </div>
-                <div class="column">
+                <div class="column is-mobile">
                   <p>
                     <span class="icon">
                       <a href="Resume.pdf" target="_blank"><i class="fas fa-file"></i></a>
@@ -151,8 +152,20 @@ function interestDiv(){
           <div class="content">
             <h3>Christian Soltero</h3>
             <div class="has-text-weight-bold">
-
-            </div>
+              <!-- Modal trigger -->
+              <label class="button" for="element-toggle">Launch Modal</label>
+              <input id="element-toggle" type="checkbox" />
+              <!-- Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <p class="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="image modal">
+                    </p>
+                  </div>
+                  <label class="modal-close is-large" for="element-toggle"></label>
+                </div>
+              </div>
           </div>
         </div>
       </div>

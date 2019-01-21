@@ -2,6 +2,14 @@
     background-color: lightblue;
 }*/
 
+#element-toggle {
+  display: none;
+}
+#element-toggle:checked ~ #myModal {
+  display: flex;
+}
+
+
 @media screen and (max-width: 1024px) {
   .columns {
     margin-left: 0;
@@ -25,13 +33,13 @@
 } */
 
  .fa-github{
-    font-size: 50px;
+    font-size: 250%;
  }
 
  .fa-linkedin{
-  font-size: 50px;
+  font-size: 250%;
  }
 
  .fa-file{
-  font-size: 50px;
+  font-size: 250%;
  }
