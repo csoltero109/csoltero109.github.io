@@ -1,118 +1,58 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <head>
-    <meta charset = "utf-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-      <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
- <style>
-   
-   html {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
-.has-bg-img { 
-      background: url('beach-dawn-evening-61105.jpg')center center; 
-      background-size:cover; 
-}
-.card{
-      width:90%;
-      border-radius: 25px;
-      margin: auto;
-      vertical-align: middle;
-      background-color: #e6e6e6;
-      opacity: 0.95;
-}
- </style>
-<title>Christian Soltero</title>
-<section class="hero is-info is-fullheight has-bg-img">
-  <div class="hero-head">
-    <nav class="tabs is-toggle is-centered">
-      <div class="container">
-        <ul>
-          <li class="is-active" id="defaultTab" onclick="defaults()">
-            <a>About me</a>
-          </li>
-          <li id="interestsTab" onclick="interests()">
-            <a>Interests</a>
-          </li>
-          <li id="experienceTab" onclick="experience()">
-            <a>Experience</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="hero-body">
-    <div class="container has-text-centered" id="mainPage">
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <h1>Welcome! My name is Christian Soltero</h1>
-            <p><b>Whether it's building PC's, making circuits, or programming scripts in various languages, I have done it all as a young IT professional.</b></p> <br>
-            <!--  After all, you can't be a pro if you only have one trick. -->
-            <div class="has-text-weight-bold">
-              <div class="columns is-mobile">
-                <div class="column is-mobile">
-                  <p>
-                    <span class="icon">
-                      <a href="https://github.com/csoltero109" target="_blank"><i class="fab fa-github"></i></a>
-                    </span>
-                  </p>
-                  <p>Github</p>
-                </div>
-                <div class="column is-mobile">
-                  <p>
-                    <span class="icon">
-                      <a href="https://www.linkedin.com/in/christian-soltero-34724a90/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </span>
-                  </p>
-                  <p>LinkedIn</p>
-                </div>
-                <div class="column is-mobile">
-                  <p>
-                    <span class="icon">
-                      <a href="Resume.pdf" target="_blank"><i class="fas fa-file"></i></a>
-                    </span>
-                  </p>
-                  <p>Resume</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>  
 
-  </head>
-  <!-- <div class="level-item">
-    <div class="is-size-3">
-      Hey there, my name is Christian Soltero
-    </div>
-  </div> -->
-	
-  <div class="level-item">
-  <body>
-  <!-- <div class="section">
-    <div class="level-item">
-      <div id="paragraphs">
-	      <display v-for="post in posts" v-bind:key="post.id" v-bind:corp="post.corp" v-bind:pos="post.pos" v-bind:loc="post.loc" v-bind:period="post.period" v-bind:details="post.details"></display>
-	    </div>
-    </div>
-  </div> -->
-  <script src="index.js"></script>
-  </body>
-  </div>
-</html>
+</head>
+<body onload="typeWriter()">
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1 id="demo" style="font-size:75px;"></h1>
+			<h2>Designing by day,<br>Coding by night</h2>
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/csoltero109?tab=repositories" target="_blank">
+						<i class="fa fa-github" style="font-size:48px;"></i>
+					</a>
+					<a href="https://github.com/csoltero109?tab=repositories" style="text-decoration: none;" target="_blank">
+						<h2>Github</h2>
+					</a>
+				</div>
+				<div class="column">
+					<a href="Resume.pdf" target="_blank">
+						<i class="fa fa-file-text" style="font-size:48px;"></i>
+					</a>
+					<a href="Resume.pdf" style="text-decoration: none;" target="_blank">
+						<h2>Resume</h2>
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://www.linkedin.com/in/christian-soltero-34724a90/" target="_blank">
+						<i class="fa fa-linkedin-square" style="font-size:48px;"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/christian-soltero-34724a90/" style="text-decoration: none;" target="_blank">
+						<h2>LinkedIn</h2>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var i = 0;
+		var txt = "I'm Christian Soltero.";
+		var speed = 50;
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("demo").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+	</script>
+</body>
+</html> 

@@ -1,45 +1,84 @@
-/*body {
-    background-color: lightblue;
-}*/
-
-#element-toggle {
-  display: none;
+* {
+  box-sizing: border-box;
 }
-#element-toggle:checked ~ #myModal {
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+a, a:visited{
+  color:#ffffff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bg { 
+  background-image: url("Images/la_freeway_original.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center-screen {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .columns {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.square {
+  height: 100%;
+  width: 100%;
+  background-color: #555;
 }
 
-.scroll {
-  /* max-height: 100px; */
-  height: 75%;
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.scroll::-webkit-scrollbar { 
-  display: none;
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("Images/la_freeway_original.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-/* 
-.half-height {
-  
-} */
 
- .fa-github{
-    font-size: 250%;
- }
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
- .fa-linkedin{
-  font-size: 250%;
- }
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
 
- .fa-file{
-  font-size: 250%;
- }
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
