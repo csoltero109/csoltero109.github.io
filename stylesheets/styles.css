@@ -5,7 +5,7 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
   padding: 10px;
 }
 
@@ -18,14 +18,6 @@ a, a:visited{
   content: "";
   display: table;
   clear: both;
-}
-
-.bg { 
-  background-image: url("Images/la_freeway_original.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .center-screen {
