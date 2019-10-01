@@ -5,7 +5,7 @@
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 25%;
   padding: 10px;
 }
 
@@ -50,7 +50,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("la_freeway_original.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("../images/la_freeway_original.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
